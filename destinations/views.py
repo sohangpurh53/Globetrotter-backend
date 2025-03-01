@@ -106,6 +106,6 @@ class UserProfileView(generics.RetrieveAPIView):
     def get_queryset(self):
         return UserProfile.objects.select_related('user').prefetch_related('destinations_solved')
     
-class GetAllDestination(generics.ListAPIView):
-    queryset = Destination.objects.all()
-    serializer_class = DestinationSerializer
+# class GetAllDestination(generics.ListAPIView):
+#     queryset = Destination.objects.all()
+#     serializer_class = DestinationSerializer
