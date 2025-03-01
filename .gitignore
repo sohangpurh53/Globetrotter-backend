@@ -1,0 +1,7 @@
+db.sqlite3
+destinations/migrations/
+destinations/__pycache__/
+*/__pycache__/
+*.py[cod]
+*$py.class
+env/
